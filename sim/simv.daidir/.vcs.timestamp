@@ -1,0 +1,122 @@
+0
+34
++itf+/home/Admin/mjcet/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/Admin/mjcet/vcs/U-2023.03/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libvirsim.so /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/liberrorinf.so /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/home/Admin/mjcet/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/Admin/mjcet/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/Admin/mjcet/vcs/U-2023.03/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-lca
+-picarchive
+/home/Admin/mjcet/vcs/U-2023.03/linux64/bin/vcs1
+/home/Admin/mjcet/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
+./../rtl/rca.v
+./../rtl/fa.v
+./../tb/rca_tb.v
+70
+which_declare=declare -f
+verdi=/home/Admin/mjcet/verdi/U-2023.03-SP1
+vcs=/home/Admin/mjcet/vcs/U-2023.03
+primewaverelia=/home/Admin/mjcet/primewaverelia/U-2023.03
+primewave=/home/Admin/mjcet/primewave/V-2023.12
+prime=/usr/mjcet/prime/U-2022.12-SP3
+dc_shell=/usr/mjcet/syn/T-2022.03-SP5
+custominfra=/home/Admin/mjcet/custominfrastructure/V-2023.12
+custom_compiler=/home/Admin/mjcet/customcompiler/V-2023.12
+XMODIFIERS=@im=ibus
+XDG_VTNR=2
+XDG_SESSION_TYPE=wayland
+XDG_SESSION_ID=19
+XDG_SESSION_DESKTOP=gnome
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/Admin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.QC8YJ3
+WAYLAND_DISPLAY=wayland-0
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/Admin/mjcet/verdi/U-2023.03-SP1
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/home/Admin/mjcet/vcs/U-2023.03
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=Admin
+UNAME=/bin/uname
+TOOL_HOME=/home/Admin/mjcet/vcs/U-2023.03/linux64
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_CLANG_PATH=/home/Admin/mjcet/vcs/U-2023.03/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/21229,unix/unix:/tmp/.ICE-unix/21229
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+PRIME_HOME=/usr/mjcet/prime/U-2022.12-SP3
+OVA_UUM=0
+MANAGERPID=21196
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+JOURNAL_STREAM=9:204230
+INVOCATION_ID=b643b40d83b54b82a35e02738ad78d47
+ICC2_HOME=/usr/mjcet/icc2/U-2022.12-SP3
+ICC2=/usr/mjcet/icc2/U-2022.12-SP3
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.195
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/cc26aa3e_cf76_4ca8_9750_b1fa162fa168
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome
+FLEXLM_DIAGNOSTICS=3
+DESKTOP_SESSION=gnome
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+DC_HOME=/usr/mjcet/syn/T-2022.03-SP5
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=adc4ddd92acc00a87990264969707564
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=adc4ddd92acc00a87990264969707564
+CUSTOM_HOME=/home/Admin/mjcet/customcompiler/V-2023.12
+COLORTERM=truecolor
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+0
+0
+5
+1768991143 ./../tb/rca_tb.v
+1768987511 ./../rtl/fa.v
+1768987442 ./../rtl/rca.v
+1685268911 /home/Admin/mjcet/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
+1677384340 /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
+4
+1677385575 /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libvirsim.so
+1677385060 /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/liberrorinf.so
+1677385018 /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so
+1677385055 /home/Admin/mjcet/vcs/U-2023.03/linux64/lib/libvfs.so
+1768991178 simv.daidir
+-1 partitionlib

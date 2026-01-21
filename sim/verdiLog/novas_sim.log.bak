@@ -1,0 +1,54 @@
+Invoking simulator...
+
+./simv -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Jan 21 15:56 2026
+
+Checkout succeeded: VCS-BASE-RUNTIME/AF3AD4D7787CF4828637
+	License file: 27020@14.139.1.126
+	License Server: 27020@14.139.1.126
+
+[SCL] 01/21/2026 15:56:42 Checking status for feature VCS-BASE-RUNTIME
+[SCL] 01/21/2026 15:56:42 PID:50243 Client:mjlab1.mjcollege.ac.in Server:27020@14.139.1.126 Checkout succeeded VCS-BASE-RUNTIME 2023.03 from VCS-Base-Runtime-Pkg
+
+*Verdi* Loading libsscore_vcs202303.so
+
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/home/Admin/Documents/sadath/sim/inter_1.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 s.
+
+*Verdi* : Enable RPC Server(50243)
+
+srcTBInvokeSim
+xterm-256color is Not a valid terminal...
+Verdi>run
+*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/Admin/Documents/sadath/sim/inter_1.fsdb". Fsdbfile name in task "rca.fsdb" is ignored.
+*Verdi* : Begin traversing the scope (rca_tb), layer (0).
+*Verdi* : End of traversing.
+1 0 0 1 0
+1 0 1 10 0
+0 1 0 1 0
+0 0 1 1 0
+1 0 0 1 0
+1 0 1 10 0
+0 1 0 1 0
+0 0 1 1 0
+1 0 0 1 0
+1 0 1 10 0
+0 1 0 1 0
+0 0 1 1 0
+$finish called from file "./../tb/rca_tb.v", line 38.
+$finish at simulation time                   60
+Simulation complete, time is 60.
+rca_tb.v, 38 : $finish;
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 60
+CPU Time:      0.030 seconds;       Data structure size:   0.0Mb
+Wed Jan 21 16:06:42 2026
+[SCL] 01/21/2026 16:06:42 PID:50243 Client:mjlab1.mjcollege.ac.in checkin (null) 
+debExit

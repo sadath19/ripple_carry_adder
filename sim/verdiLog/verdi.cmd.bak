@@ -1,0 +1,106 @@
+simSetSimulator "-vcssv" -exec "./simv" -args " " -uvmDebug on
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+srcTBInvokeSim
+verdiSetActWin -dock widgetDock_<Member>
+verdiWindowResize -win $_Verdi_1 "500" "182" "900" "700"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "rca_tb.dut" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcTBRunSim
+srcTBSimReset
+srcHBSelect "rca_tb.dut" -win $_nTrace1
+srcSetScope "rca_tb.dut" -delim "." -win $_nTrace1
+srcHBSelect "rca_tb.dut" -win $_nTrace1
+wvCreateWindow
+verdiSetActWin -win $_nWave3
+srcTBRunSim
+wvGetSignalOpen -win $_nWave3
+wvGetSignalSetScope -win $_nWave3 "/rca_tb"
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/rca_tb/a\[3:0\]} \
+{/rca_tb/b\[3:0\]} \
+{/rca_tb/cin} \
+{/rca_tb/s\[3:0\]} \
+{/rca_tb/cout} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+}
+wvSelectSignal -win $_nWave3 {( "G1" 5 )} 
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvGetSignalClose -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSetCursor -win $_nWave3 0.485846
+wvSetCursor -win $_nWave3 0.149491
+wvSetCursor -win $_nWave3 5.306938
+wvSetCursor -win $_nWave3 10.015911
+wvSetCursor -win $_nWave3 4.933210
+wvSetCursor -win $_nWave3 14.500648 -snap {("G2" 0)}
+srcPrint -win $_nTrace1 -printScope "file" -column 2 -fontSize 7 -lineNum on \
+         -indicator off -annot on -paper A4 -header "%f - %h @ %t" -footer "" \
+         -type PS2 -printer "lp"
+wvSelectSignal -win $_nWave3 {( "G1" 1 )} 
+wvForceSignalValue -win $_nWave3 -signal { { rca_tb.a[3:0] } } -value X -type hdl
+wvSelectSignal -win $_nWave3 {( "G1" 1 )} 
+wvForceSignalValue -win $_nWave3 -signal { { rca_tb.a[3:0] } } -value 0 -type hdl
+wvSetCursor -win $_nWave3 3.718594 -snap {("G1" 1)}
+wvSetCursor -win $_nWave3 3.344866 -snap {("G1" 1)}
+srcActiveTrace "rca_tb.a\[3:0\]" -TraceByDConWave -TraceTime 0 -TraceValue 0001 \
+           -win $_nTrace1
+wvSetCursor -win $_nWave3 4.615541 -snap {("G1" 0)}
+wvSetCursor -win $_nWave3 12.781499 -snap {("G1" 1)}
+wvSetCursor -win $_nWave3 13.416836 -snap {("G1" 0)}
+wvSetCursor -win $_nWave3 0.317669 -snap {("G1" 0)}
+wvSetCursor -win $_nWave3 0.000000 -snap {("G1" 1)}
+srcHBSelect "rca_tb.dut.dut1" -win $_nTrace1
+srcSetScope "rca_tb.dut.dut1" -delim "." -win $_nTrace1
+srcHBSelect "rca_tb.dut.dut1" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "rca_tb.dut.dut1" -win $_nTrace1
+srcHBSelect "rca_tb.dut.dut1" -win $_nTrace1
+srcHBSelect "rca_tb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+verdiSetActWin -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchNext -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3
+wvSearchPrev -win $_nWave3

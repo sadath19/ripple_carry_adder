@@ -1,0 +1,3 @@
+Command Line: /home/Admin/mjcet/vcs/U-2023.03/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00388+C00389
+uname(Linux mjlab1.mjcollege.ac.in 4.18.0-553.92.1.el8_10.x86_64 #1 SMP Thu Jan 15 12:07:46 UTC 2026 x86_64)
+au time 0.023834 0.005622 0.005626 delta 87674880 87674880 total 291168256 291168256

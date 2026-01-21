@@ -1,0 +1,3 @@
+./../rtl/fa.v
+./../rtl/rca.v
+./../tb/rca_tb.v

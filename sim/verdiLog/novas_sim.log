@@ -1,0 +1,32 @@
+Verdi>restart
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Jan 21 15:24 2026
+Checkout succeeded: VCS-BASE-RUNTIME/AF3AD4D7787CF4828637
+	License file: 27020@14.139.1.126
+	License Server: 27020@14.139.1.126
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file '/home/Admin/Documents/sadath/sim/inter.fsdb'
+*Verdi* : Flush all FSDB Files at 0 s.
+*Verdi* : Enable RPC Server(47289)
+*Verdi* : Flush all FSDB Files at 0 s.
+[SCL] 01/21/2026 15:24:57 Checking status for feature VCS-BASE-RUNTIME
+[SCL] 01/21/2026 15:24:57 PID:47289 Client:mjlab1.mjcollege.ac.in Server:27020@14.139.1.126 Checkout succeeded VCS-BASE-RUNTIME 2023.03 from VCS-Base-Runtime-Pkg
+xterm-256color is Not a valid terminal...
+Verdi>run
+*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/Admin/Documents/sadath/sim/inter.fsdb". Fsdbfile name in task "rca.fsdb" is ignored.
+*Verdi* : Begin traversing the scope (rca_tb), layer (0).
+*Verdi* : End of traversing.
+1 0 0 1 0
+1 0 1 10 0
+0 1 0 1 0
+0 0 1 1 0
+$finish called from file "./../tb/rca_tb.v", line 30.
+$finish at simulation time                   20
+Simulation complete, time is 20.
+rca_tb.v, 30 : $finish;
+Verdi>force {rca_tb.a[3:0]} {x} -freeze
+Verdi>force {rca_tb.a[3:0]} {0} -freeze
